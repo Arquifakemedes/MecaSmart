@@ -1,0 +1,203 @@
+/* ==============================
+   INTRODUÇÃO
+============================== */
+.introText {
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+  font-size: 1.15rem;
+  color: #333;
+  line-height: 1.8;
+  position: relative;
+  padding: 1.5rem 2rem;
+  border-radius: 16px;
+  background: #fff;
+}
+
+
+html[data-theme='dark'] .introText {
+  color: #ddd;
+  background: linear-gradient(145deg, #1a1a1a, #121212);
+}
+
+/* ==============================
+   FEATURES / CARDS
+============================== */
+.features {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f5f7fa, #e4e7eb);
+  display: flex;
+  justify-content: center;
+}
+
+html[data-theme='dark'] .features {
+  background: linear-gradient(135deg, #0d0d0d, #1c1c1c);
+}
+
+/* GRID responsivo */
+.featuresRow {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+@media (max-width: 1024px) {
+  .featuresRow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .featuresRow {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CARDS */
+.featureCard {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 2rem 2.5rem;
+  text-align: left;
+  transition: all 0.35s ease;
+  cursor: default;
+  line-height: 1.7;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+html[data-theme='dark'] .featureCard {
+  background: #1e1e1e;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.featureCard:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+/* ÍCONES */
+.cardIcon {
+  height: 120px;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  transition: transform 0.3s ease;
+}
+
+
+.featureCard:hover .cardIcon {
+  transform: rotate(10deg) scale(1.05);
+}
+
+/* TÍTULOS */
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #222;
+}
+
+html[data-theme='dark'] .cardTitle {
+  color: #fff;
+}
+
+/* DESCRIÇÃO */
+.cardDescription {
+  font-size: 1rem;
+  color: #444;
+}
+
+html[data-theme='dark'] .cardDescription {
+  color: #ccc;
+}
+
+.cardDescription ul {
+  margin-top: 0.8rem;
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.cardDescription li {
+  margin-bottom: 0.6rem;
+  color: #555;
+}
+
+html[data-theme='dark'] .cardDescription li {
+  color: #ddd;
+}
+
+/* ==============================
+   SEÇÃO DA EQUIPE
+============================== */
+.sectionTitle {
+  margin: 4rem 0 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #09e23f;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+.teamSection {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* FOTO DA EQUIPE */
+.photoWrapper {
+  margin-bottom: 2.5rem;
+}
+
+.teamPhoto {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.teamPhoto:hover {
+  transform: scale(1.02);
+}
+
+/* CARDS DA EQUIPE */
+.teamCardsRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.teamCard {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 2rem;
+  width: 220px;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+html[data-theme='dark'] .teamCard {
+  background: #1e1e1e;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+
+.teamCardTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+

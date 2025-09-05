@@ -1,0 +1,40 @@
+/* ==============================
+   VARIÁVEIS DE CORES - CUSTOMIZADAS
+============================== */
+:root {
+  --ifm-color-primary: #22c203;             /* Amarelo principal */
+  --ifm-color-primary-dark:#eae4ec;        /* Amarelo escuro */
+  --ifm-color-primary-darker: #ffffff;      /* Amarelo mais intenso */
+  --ifm-color-primary-light: hsl(0, 0%, 100%);       /* Amarelo claro */
+  --ifm-color-primary-lighter: #f1ecf2;     /* Amarelo mais suave */
+  --ifm-color-primary-lightest: #caa1d8;    /* Amarelo pastel */
+  
+  --ifm-color-background: #fdf9f0;          /* Fundo claro neutro */
+  --ifm-color-surface: #ffffff;             /* Fundo dos cards */
+  --ifm-color-text: #222222;                /* Texto principal */
+  --ifm-color-text-secondary: #555555;      /* Texto secundário */
+  --ifm-color-border: #22c203;              /* Bordas e destaques */
+
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(140, 2, 253, 0.2); /* Amarelo claro */
+}
+
+/* ==============================
+   TEMA ESCURO
+============================== */
+[data-theme='dark'] {
+  --ifm-color-primary: #88499d;    
+  --ifm-color-primary-dark:#79428b; 
+  --ifm-color-primary-darker: #542c61; 
+  --ifm-color-primary-light: #9c57b3;
+  --ifm-color-primary-lighter: #c05fe0;    
+  --ifm-color-primary-lightest: #caa1d8;    
+
+  --ifm-color-background: #121212;          /* Fundo escuro */
+  --ifm-color-surface: #1e1e1e;             /* Fundo de cards */
+  --ifm-color-text: #f5f5f5;                /* Texto claro */
+  --ifm-color-text-secondary: #cccccc;      /* Texto secundário */
+  --ifm-color-border: #fdc202;              /* Destaques e bordas */
+  
+  --docusaurus-highlighted-code-line-bg: rgba(253, 194, 2, 0.25);
+}
